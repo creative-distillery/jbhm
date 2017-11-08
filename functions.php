@@ -63,6 +63,9 @@
   	));
   }
 
+/* Include Custom Post Types */
+include_once( get_stylesheet_directory() . '/inc/cpt.php' );
+
 /* Setup ACF */
 
   add_filter('acf/settings/path', 'my_acf_settings_path');
@@ -87,4 +90,4 @@
 
   acf_add_options_page();
 
-  // include_once( get_stylesheet_directory() . '/inc/fields.php' );
+  include_once( get_stylesheet_directory() . '/inc/fields.php' );
